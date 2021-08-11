@@ -21,14 +21,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //2가지!
         
         //1번 방법 - 임의의 셀 만들기
-        //2번 방법 - 스토리보드 + id
+        //2번 방법 - 스토리보드 + id -> 실전
         
-        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "TableCellType1")
-        cell.textLabel?.text = "\(indexPath.row)"
+//        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "TableCellType1")
+//        cell.textLabel?.text = "\(indexPath.row)"
         
+        let cell = TableViewMain.dequeueReusableCell(withIdentifier: "Type1", for: indexPath) as! Type1
+        //as? as! - 부모, 자식 친자확인.
+        
+        cell.LabelText.text = "\(indexPath.row)"
         return cell
     }
     
+    //클릭
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
