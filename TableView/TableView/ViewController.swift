@@ -7,33 +7,58 @@
 
 import UIKit
 
+//1. http 통신 방법 - urlsession
+//2. JSON 데이터 형태 - {"키(key)": 값(value)} - 뉴스
+//3. 테이블뷰의 데이터 매칭!!
+
+//  {
+//      [
+//          ""키(key)": 값(value)",
+//          ""키(key)": 값(value)",
+//          ""키(key)": 값(value)"
+//      ]
+//  }
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var TableViewMain: UITableView!
     
+    var newsData: Array<Dictionary<String, Any>>?
+    
+    func getNews(){
+        let task = URLSession.shared.dataTask(with: URL(string: "https://newsapi.org/v2/top-headlines?country=kr&apiKey=072f95fb106742f8b116b2ca59a4763f")!) { (data, response, error) in
+            
+            if let dataJson = data{
+                //Json Pasing
+                do {
+                    let json = try JSONSerialization.jsonObject(with: dataJson, options: []) as! Dictionary<String, Any>
+                    print(json)
+                    //Dictionary
+                    let articles = json["articles"] as! Array<Dictionary<String, Any>>
+                    print(articles )
+                    self.newsData = articles
+//                   for(idx, value) in articles.enumerated() {
+//                        if let v = value as? Dictionary<String, Any>{
+//                            print("\(v["title"])")
+//                            v["description"]
+//                        }
+//                    }
+                }
+                catch {}
+            }
+        }
+        task.resume()
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //몇개?  숫자
         return 100
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //무엇?  반복 10번?
-        //2가지!
-        
-        //1번 방법 - 임의의 셀 만들기
-        //2번 방법 - 스토리보드 + id -> 실전
-        
-//        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "TableCellType1")
-//        cell.textLabel?.text = "\(indexPath.row)"
-        
         let cell = TableViewMain.dequeueReusableCell(withIdentifier: "Type1", for: indexPath) as! Type1
-        //as? as! - 부모, 자식 친자확인.
-        
         cell.LabelText.text = "\(indexPath.row)"
         return cell
     }
-    
-    //클릭
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(indexPath.row)")
     }
@@ -44,15 +69,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         TableViewMain.delegate = self
         TableViewMain.dataSource = self
-    }
-
-
-    //TableView 테이블로 된 뷰 - 여러개의 행이 모여있는 목록 뷰(화면)
-    //목적 1.  정갈하게 보여줄려고~ ex) 전화번호부
-    
-    //1. 데이터 무엇? - 전화번호부
-    //2. 데이커 개수? - 100, 10000
-    //3.(옵션) 데이터 행 눌렀다! - 클릭
-    
-}
+        
+        getNews()
+    }}
 
