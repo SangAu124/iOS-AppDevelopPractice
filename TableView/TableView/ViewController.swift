@@ -9,7 +9,8 @@ import UIKit
 
 //1. http 통신 방법 - urlsession
 //2. JSON 데이터 형태 - {"키(key)": 값(value)} - 뉴스
-//3. 테이블뷰의 데이터 매칭!!
+//3. 테이블뷰의 데이터 매칭!! <- 통보! 그리기!
+// ----!!! background : network / ui : Main
 
 //  {
 //      [
@@ -35,14 +36,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     print(json)
                     //Dictionary
                     let articles = json["articles"] as! Array<Dictionary<String, Any>>
-                    print(articles )
+                    print(articles)
                     self.newsData = articles
-//                   for(idx, value) in articles.enumerated() {
-//                        if let v = value as? Dictionary<String, Any>{
-//                            print("\(v["title"])")
-//                            v["description"]
-//                        }
-//                    }
+                    
+                    DispatchQueue.main.async {
+                        self.TableViewMain.reloadData() // Main
+                    }
                 }
                 catch {}
             }
@@ -52,13 +51,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        if let news = newsData {
+            return news.count
+        } else{
+            return 0
+        }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = TableViewMain.dequeueReusableCell(withIdentifier: "Type1", for: indexPath) as! Type1
-        cell.LabelText.text = "\(indexPath.row)"
+        
+        let idx = indexPath.row
+        if let news = newsData {
+            let row = news[idx]
+            if let r = row as? Dictionary<String, Any>{
+                if let title = r["title"] as? String{
+                    cell.LabelText.text = title
+                }
+            }
+        }
+        
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(indexPath.row)")
     }
