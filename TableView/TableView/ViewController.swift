@@ -10,7 +10,8 @@ import UIKit
 //1. http 통신 방법 - urlsession
 //2. JSON 데이터 형태 - {"키(key)": 값(value)} - 뉴스
 //3. 테이블뷰의 데이터 매칭!! <- 통보! 그리기!
-// ----!!! background : network / ui : Main
+
+// ---- !!! background : network / ui : Main !!! ----
 
 //  {
 //      [
