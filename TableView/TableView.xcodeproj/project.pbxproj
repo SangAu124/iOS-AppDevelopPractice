@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8016A3F726CD182400E052AE /* NewsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A3F626CD182400E052AE /* NewsDetailController.swift */; };
 		80760C6B26C39B0D008451E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80760C6A26C39B0D008451E8 /* AppDelegate.swift */; };
 		80760C6D26C39B0D008451E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80760C6C26C39B0D008451E8 /* SceneDelegate.swift */; };
 		80760C6F26C39B0D008451E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80760C6E26C39B0D008451E8 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8016A3F626CD182400E052AE /* NewsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailController.swift; sourceTree = "<group>"; };
 		80760C6726C39B0D008451E8 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80760C6A26C39B0D008451E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80760C6C26C39B0D008451E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				80760C6C26C39B0D008451E8 /* SceneDelegate.swift */,
 				80760C6E26C39B0D008451E8 /* ViewController.swift */,
 				80760C8126C3B28A008451E8 /* Type1.swift */,
+				8016A3F626CD182400E052AE /* NewsDetailController.swift */,
 				80760C7026C39B0D008451E8 /* Main.storyboard */,
 				80760C7626C39B0E008451E8 /* Assets.xcassets */,
 				80760C7826C39B0E008451E8 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				80760C6F26C39B0D008451E8 /* ViewController.swift in Sources */,
 				80760C7526C39B0D008451E8 /* TableView.xcdatamodeld in Sources */,
 				80760C6B26C39B0D008451E8 /* AppDelegate.swift in Sources */,
+				8016A3F726CD182400E052AE /* NewsDetailController.swift in Sources */,
 				80760C6D26C39B0D008451E8 /* SceneDelegate.swift in Sources */,
 				80760C8226C3B28A008451E8 /* Type1.swift in Sources */,
 			);
