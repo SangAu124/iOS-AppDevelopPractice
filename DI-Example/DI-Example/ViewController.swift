@@ -23,7 +23,7 @@ class ViewController: UIViewController {
             return ColorProvider()
         }
         container.register(SecondVC.self) { resolver in
-            let vc = SecondVC(provider: resolver.resolve(ColorProvider.self))
+            let vc = SecondVC(provider: resolver.resolve(ColorProviding.self))
             return vc
             
         }
