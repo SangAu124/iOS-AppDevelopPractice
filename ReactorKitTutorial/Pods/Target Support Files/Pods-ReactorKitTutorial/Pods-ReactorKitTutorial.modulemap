@@ -1,0 +1,6 @@
+framework module Pods_ReactorKitTutorial {
+  umbrella header "Pods-ReactorKitTutorial-umbrella.h"
+
+  export *
+  module * { export * }
+}
