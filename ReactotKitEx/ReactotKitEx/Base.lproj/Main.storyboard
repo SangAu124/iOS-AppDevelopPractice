@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReactotKitEx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpX-Ra-mcF">
+                                <rect key="frame" x="192.5" y="420" width="29" height="56.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjs-wM-epb">
+                                <rect key="frame" x="20" y="432.5" width="43.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTw-LW-npB">
+                                <rect key="frame" x="350.5" y="432.5" width="43.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="zkn-Zc-nfB">
+                                <rect key="frame" x="197" y="481.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zkn-Zc-nfB" firstAttribute="top" secondItem="TpX-Ra-mcF" secondAttribute="bottom" constant="5" id="830-Ew-1Qj"/>
+                            <constraint firstItem="zkn-Zc-nfB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IJH-Pn-SK2"/>
+                            <constraint firstItem="Wjs-wM-epb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cCf-fZ-qha"/>
+                            <constraint firstItem="Wjs-wM-epb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fXo-yv-XXv"/>
+                            <constraint firstItem="qTw-LW-npB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hfM-ch-Qab"/>
+                            <constraint firstItem="TpX-Ra-mcF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jHl-l7-a9o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qTw-LW-npB" secondAttribute="trailing" constant="20" id="rub-UK-O4n"/>
+                            <constraint firstItem="TpX-Ra-mcF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uNb-wS-cbL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="zkn-Zc-nfB" id="zQx-zI-cgG"/>
+                        <outlet property="decreaseButton" destination="Wjs-wM-epb" id="xcu-X6-JTv"/>
+                        <outlet property="increaseButton" destination="qTw-LW-npB" id="Q7F-JH-gWr"/>
+                        <outlet property="valueLabel" destination="TpX-Ra-mcF" id="Ojy-zA-22d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minus" catalog="system" width="128" height="24"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
