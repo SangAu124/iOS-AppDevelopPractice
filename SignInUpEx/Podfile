@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SignInUpEx' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SignInUpEx
+  
+  pod 'ReactorKit', '~> 3.1.0'
+  pod 'Then', '~> 2.7.0'
+  pod 'SnapKit', '~> 5.0.1'
+  pod 'PinLayout', '~> 1.10.0'
+  pod 'FlexLayout', '~> 1.3.23'
+  pod 'Alamofire', '~> 5.5'
+  pod 'RxCocoa'
+  
+  target 'SignInUpExTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
