@@ -24,6 +24,8 @@ class SignInViewController: UIViewController, View {
         $0.numberOfLines = 1
         $0.font = .systemFont(ofSize: 35, weight: .bold)
         $0.textAlignment = .center
+        $0.textColor = .label
+        $0.sizeToFit()
     }
     private let idTextField = UITextField().then {
         $0.placeholder = "아이디를 입력하세요."
@@ -57,10 +59,22 @@ class SignInViewController: UIViewController, View {
     }
     private func setLayout() {
         rootContainer.flex.define { flex in
-            
+            flex.addItem(titleLabel)
+                .height(300)
+                .marginTop(300)
+                .marginLeft(300)
         }
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .systemBackground
+        setUp()
+        setLayoutSubViews()
+        setLayout()
+    }
+    
 
     func bind(reactor: SignInReactor) {
         
