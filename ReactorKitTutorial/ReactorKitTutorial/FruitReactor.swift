@@ -16,18 +16,18 @@ class FruitReactor: Reactor {
         case grapes
     }
     
-    // MARK: - State
-    struct State {
-        var fruitName: String
-        var isLoading: Bool
-    }
-    
     // MARK: -  Mutations
     enum Mutation {
         case changeLabelApple
         case changeLabelBanana
         case changeLabelGrapes
         case setLoading(Bool)
+    }
+    
+    // MARK: - State
+    struct State {
+        var fruitName: String
+        var isLoading: Bool
     }
     
     let initialState: State
