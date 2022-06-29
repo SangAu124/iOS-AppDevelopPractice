@@ -8,16 +8,9 @@
 import Swinject
 import UIKit
 
-class ColorProvider: ColorProviding {
-    var color: UIColor {
-        let colors: [UIColor] = [.systemPink, .systemBlue, .systemGreen]
-        return colors.randomElement()!
-    }
-}
-
 class ViewController: UIViewController {
-
-    let containerL: Container = {
+    
+    let container: Container = {
         let container = Container()
         container.register(ColorProviding.self) { _ in
             return ColorProvider()
@@ -25,29 +18,28 @@ class ViewController: UIViewController {
         container.register(SecondVC.self) { resolver in
             let vc = SecondVC(provider: resolver.resolve(ColorProviding.self))
             return vc
-            
         }
+        
         return container
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .gray
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-        button.setTitle("Tap me", for: .normal)
+        let button  = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        button.setTitle("Tap Me", for: .normal)
         button.center = view.center
         button.addTarget(self, action: #selector(handleButton), for: .touchUpInside)
+        button.tintColor = .systemBlue
         view.addSubview(button)
+        
     }
-    @objc private func handleButton() {
-        guard let vc = containerL.resolve(SecondVC.self) else { return }
+    
+    @objc func handleButton() {
+        guard let vc = container.resolve(SecondVC.self) else { return }
         present(vc, animated: true)
     }
-}
-
-protocol ColorProviding {
-    var color: UIColor { get }
+    
 }
 
 class SecondVC: UIViewController {
@@ -58,14 +50,24 @@ class SecondVC: UIViewController {
         self.provider = provider
         super.init(nibName: nil, bundle: nil)
     }
-    
     required init?(coder: NSCoder) {
-        fatalError()
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = provider?.color ?? .black
     }
-    
 }
+
+class ColorProvider: ColorProviding {
+    var color: UIColor {
+        let color: [UIColor] = [.systemRed, .systemBlue, .systemYellow]
+        return color.randomElement()!
+    }
+}
+
+protocol ColorProviding {
+    var color: UIColor { get }
+}
+
