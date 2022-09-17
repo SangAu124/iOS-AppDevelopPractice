@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E71062DB468492605230CB0F /* Pods_Moya_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1701D2E49EECF6B1EE355059 /* Pods_Moya_Test.framework */; };
+		EF15676C28D58E93001FB094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15676B28D58E93001FB094 /* AppDelegate.swift */; };
+		EF15676E28D58E93001FB094 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15676D28D58E93001FB094 /* SceneDelegate.swift */; };
+		EF15677028D58E93001FB094 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15676F28D58E93001FB094 /* ViewController.swift */; };
+		EF15677328D58E93001FB094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF15677128D58E93001FB094 /* Main.storyboard */; };
+		EF15677528D58E94001FB094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF15677428D58E94001FB094 /* Assets.xcassets */; };
+		EF15677828D58E94001FB094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF15677628D58E94001FB094 /* LaunchScreen.storyboard */; };
+		EF15678028D58ECF001FB094 /* JokeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15677F28D58ECF001FB094 /* JokeAPI.swift */; };
+		EF8AED1228D59221006252CF /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8AED1128D59221006252CF /* Joke.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1701D2E49EECF6B1EE355059 /* Pods_Moya_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		191C7B468DA0044BD6EF450D /* Pods-Moya_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya_Test.release.xcconfig"; path = "Target Support Files/Pods-Moya_Test/Pods-Moya_Test.release.xcconfig"; sourceTree = "<group>"; };
+		A508FA33FFD89F681719930B /* Pods-Moya_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya_Test.debug.xcconfig"; path = "Target Support Files/Pods-Moya_Test/Pods-Moya_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		EF15676828D58E93001FB094 /* Moya_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moya_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF15676B28D58E93001FB094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF15676D28D58E93001FB094 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF15676F28D58E93001FB094 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF15677228D58E93001FB094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF15677428D58E94001FB094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF15677728D58E94001FB094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF15677928D58E94001FB094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF15677F28D58ECF001FB094 /* JokeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAPI.swift; sourceTree = "<group>"; };
+		EF8AED1128D59221006252CF /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF15676528D58E93001FB094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71062DB468492605230CB0F /* Pods_Moya_Test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64AD3C5789546DAD188CA214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1701D2E49EECF6B1EE355059 /* Pods_Moya_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BEDB25D57A1DE2AFF1D5DA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A508FA33FFD89F681719930B /* Pods-Moya_Test.debug.xcconfig */,
+				191C7B468DA0044BD6EF450D /* Pods-Moya_Test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF15675F28D58E93001FB094 = {
+			isa = PBXGroup;
+			children = (
+				EF15676A28D58E93001FB094 /* Moya_Test */,
+				EF15676928D58E93001FB094 /* Products */,
+				7BEDB25D57A1DE2AFF1D5DA6 /* Pods */,
+				64AD3C5789546DAD188CA214 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF15676928D58E93001FB094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF15676828D58E93001FB094 /* Moya_Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF15676A28D58E93001FB094 /* Moya_Test */ = {
+			isa = PBXGroup;
+			children = (
+				EF15676B28D58E93001FB094 /* AppDelegate.swift */,
+				EF15676D28D58E93001FB094 /* SceneDelegate.swift */,
+				EF15676F28D58E93001FB094 /* ViewController.swift */,
+				EF15677128D58E93001FB094 /* Main.storyboard */,
+				EF15677428D58E94001FB094 /* Assets.xcassets */,
+				EF15677628D58E94001FB094 /* LaunchScreen.storyboard */,
+				EF15677928D58E94001FB094 /* Info.plist */,
+				EF15677F28D58ECF001FB094 /* JokeAPI.swift */,
+				EF8AED1128D59221006252CF /* Joke.swift */,
+			);
+			path = Moya_Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF15676728D58E93001FB094 /* Moya_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF15677C28D58E94001FB094 /* Build configuration list for PBXNativeTarget "Moya_Test" */;
+			buildPhases = (
+				16FB504B2D14BCEB10FFC09E /* [CP] Check Pods Manifest.lock */,
+				EF15676428D58E93001FB094 /* Sources */,
+				EF15676528D58E93001FB094 /* Frameworks */,
+				EF15676628D58E93001FB094 /* Resources */,
+				F2870222EB34F63F47F2717E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moya_Test;
+			productName = Moya_Test;
+			productReference = EF15676828D58E93001FB094 /* Moya_Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF15676028D58E93001FB094 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EF15676728D58E93001FB094 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EF15676328D58E93001FB094 /* Build configuration list for PBXProject "Moya_Test" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF15675F28D58E93001FB094;
+			productRefGroup = EF15676928D58E93001FB094 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF15676728D58E93001FB094 /* Moya_Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF15676628D58E93001FB094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF15677828D58E94001FB094 /* LaunchScreen.storyboard in Resources */,
+				EF15677528D58E94001FB094 /* Assets.xcassets in Resources */,
+				EF15677328D58E93001FB094 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16FB504B2D14BCEB10FFC09E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moya_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2870222EB34F63F47F2717E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya_Test/Pods-Moya_Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya_Test/Pods-Moya_Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moya_Test/Pods-Moya_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF15676428D58E93001FB094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF15677028D58E93001FB094 /* ViewController.swift in Sources */,
+				EF8AED1228D59221006252CF /* Joke.swift in Sources */,
+				EF15676C28D58E93001FB094 /* AppDelegate.swift in Sources */,
+				EF15676E28D58E93001FB094 /* SceneDelegate.swift in Sources */,
+				EF15678028D58ECF001FB094 /* JokeAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF15677128D58E93001FB094 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF15677228D58E93001FB094 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF15677628D58E94001FB094 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF15677728D58E94001FB094 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF15677A28D58E94001FB094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF15677B28D58E94001FB094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF15677D28D58E94001FB094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A508FA33FFD89F681719930B /* Pods-Moya_Test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA35V5PR3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Moya_Test/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sangau.Moya-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF15677E28D58E94001FB094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191C7B468DA0044BD6EF450D /* Pods-Moya_Test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA35V5PR3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Moya_Test/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sangau.Moya-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF15676328D58E93001FB094 /* Build configuration list for PBXProject "Moya_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF15677A28D58E94001FB094 /* Debug */,
+				EF15677B28D58E94001FB094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF15677C28D58E94001FB094 /* Build configuration list for PBXNativeTarget "Moya_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF15677D28D58E94001FB094 /* Debug */,
+				EF15677E28D58E94001FB094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF15676028D58E93001FB094 /* Project object */;
+}
