@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F97FED5910A992CC1252A4B /* Pods_PracCA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0005526D334ABBAF35562D /* Pods_PracCA.framework */; };
+		EF1EF767298415EA004688D0 /* testUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1EF766298415EA004688D0 /* testUseCase.swift */; };
 		EF50F04F27F32910000AC783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50F04E27F32910000AC783 /* AppDelegate.swift */; };
 		EF50F05127F32910000AC783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50F05027F32910000AC783 /* SceneDelegate.swift */; };
 		EF50F05827F32910000AC783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF50F05727F32910000AC783 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		0F65F11FAE9489E2E585872F /* Pods-PracCA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracCA.debug.xcconfig"; path = "Target Support Files/Pods-PracCA/Pods-PracCA.debug.xcconfig"; sourceTree = "<group>"; };
 		6443C947468CB91975268A1F /* Pods-PracCA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracCA.release.xcconfig"; path = "Target Support Files/Pods-PracCA/Pods-PracCA.release.xcconfig"; sourceTree = "<group>"; };
 		9D0005526D334ABBAF35562D /* Pods_PracCA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracCA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1EF766298415EA004688D0 /* testUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = testUseCase.swift; path = ../../../../../DodamDodam_iOS_V6/Projects/Service/Sources/Domain/Model/Member/testUseCase.swift; sourceTree = "<group>"; };
 		EF50F04B27F32910000AC783 /* PracCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF50F04E27F32910000AC783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF50F05027F32910000AC783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +48,6 @@
 				0F65F11FAE9489E2E585872F /* Pods-PracCA.debug.xcconfig */,
 				6443C947468CB91975268A1F /* Pods-PracCA.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,7 +105,6 @@
 				EF50F06427F33C30000AC783 /* Data */,
 				EF50F04E27F32910000AC783 /* AppDelegate.swift */,
 				EF50F05027F32910000AC783 /* SceneDelegate.swift */,
-				EF50F06827F33CD6000AC783 /* ViewController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -119,6 +119,7 @@
 		EF50F06527F33C39000AC783 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				EF1EF766298415EA004688D0 /* testUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -126,6 +127,7 @@
 		EF50F06627F33C40000AC783 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				EF50F06827F33CD6000AC783 /* ViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -252,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF50F06927F33CD6000AC783 /* ViewController.swift in Sources */,
+				EF1EF767298415EA004688D0 /* testUseCase.swift in Sources */,
 				EF50F04F27F32910000AC783 /* AppDelegate.swift in Sources */,
 				EF50F05127F32910000AC783 /* SceneDelegate.swift in Sources */,
 			);
